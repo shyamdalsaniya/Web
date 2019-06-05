@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body{
+            background-color: cadetblue;
+        }
+.wrapper{
+    height: 800px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 21px;
+}
+.red{
+    width: 90px;
+    height: 90px;
+    background-color: orangered;
+    box-shadow: 0px 0px 10px 5px orangered;
+}
+.orange{
+    left: 10px;
+    width: 70px;
+    height: 70px;
+    background-color: orange;
+    box-shadow: 0px 0px 12px 6px orange;
+
+}
+.gold{
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+}
+.white{
+    left: 28px;
+    width: 35px;
+    height: 35px;
+    background-color:lightyellow;
+    box-shadow: 0px 0px 9px 4px lightyellow;
+
+}
+.blue{
+    left: 38px;
+    width: 15px;
+    height: 15px;
+    background-color:blue;
+    box-shadow: 0px 0px 10px 5px blue;
+}
+.black{
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    bottom: 50%;
+    background-color:black;
+    box-shadow: 0px 0px 15px 10px black;
+}
+.base{
+    border-radius: 50%;
+    position: absolute;
+}
+.flam-wrapper{
+    position: relative;
+    animation: ani 3ms ease-in infinite;
+}
+.flam{
+    bottom: 0;
+    position: absolute;
+    border-radius: 50% 0 50% 50%;
+    transform: rotate(-45deg);
+}
+
+@keyframes ani{
+    0%{transform: rotate(-1deg)}
+    20%{transform: rotate(2deg) scale(1.05deg)}
+    40%{transform: rotate(-1deg)}
+    60%{transform: rotate(1deg)}
+    80%{transform: rotate(-1deg) scale(0.90deg)}
+    1000%{transform: rotate(1deg)}
+
+}
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="flam-wrapper">
+           <div class="flam red"></div>
+            <div class="flam orange"></div>
+            <div class="flam gold"></div>
+            <div class="flam white"></div>
+            <div class="flam blue"></div>
+            <div class="base gold"></div>
+            <div class="base black"></div>
+        </div>
+    </div>
+</body>
+
+</html>
